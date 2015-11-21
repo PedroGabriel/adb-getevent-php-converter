@@ -1,0 +1,18 @@
+add device 1: /dev/input/event4
+  name:     "tegra-snd-max98088"
+add device 2: /dev/input/event3
+  name:     "touch_dev"
+add device 3: /dev/input/event2
+  name:     "cp_watcher"
+add device 4: /dev/input/event1
+  name:     "proximity"
+add device 5: /dev/input/event0
+  name:     "light"
+add device 6: /dev/input/event5
+  name:     "tegra-max98088 Headphone Jack"
+add device 7: /dev/input/event6
+  name:     "gpio-keys"
+/dev/input/event3: 0001 0066 00000001
+/dev/input/event3: 0000 0000 00000000
+/dev/input/event3: 0001 0066 00000000
+/dev/input/event3: 0000 0000 00000000

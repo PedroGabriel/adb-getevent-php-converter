@@ -1,0 +1,4 @@
+sendevent /dev/input/event3 1 102 1
+sendevent /dev/input/event3 0 0 0
+sendevent /dev/input/event3 1 102 0
+sendevent /dev/input/event3 0 0 0
