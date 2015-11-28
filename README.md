@@ -24,7 +24,7 @@ To play the recorded action:
 Press the home button on the phone then ctrl+c/cancel this procces in `$ terminal` window
 
 `$ php hex2dat.php home_button_press`  
-`$ adb push app_drawer_close.scr /sdcard/home_button_press.scr`  
+`$ adb push home_button_press.scr /sdcard/home_button_press.scr`  
 `$ adb shell sh /sdcard/home_button_press.scr`  
 
 And the home button was pressed :)
