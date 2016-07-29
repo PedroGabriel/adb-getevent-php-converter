@@ -1,5 +1,7 @@
 <?php
-$file = pathinfo($argv[1]);
+if(!isset($argv[1])||!$argv[1]) die("Place file name/path in the first argument.\n");
+
+$file = pathinfo(@$argv[1]);
 $IN = $file['basename'];
 $OUT = $file['filename'].'.scr';
 
@@ -7,7 +9,7 @@ try{
 	if(!file_exists($IN))
 		throw new Exception();
 }catch(Exception $e){
-    die('File not found');
+    die("File not found\n");
 }
 $in_file = fopen($IN, "r");
 $out_file = fopen($OUT,"w");
@@ -22,5 +24,5 @@ while(($line = fgets($in_file)) !== false){
 fclose($in_file);
 fclose($out_file);
 
-echo "\n\nSuccess, output into \"".$OUT."\"";
+echo "\nSuccess, output into \"".$OUT."\"\n";
 ?>
